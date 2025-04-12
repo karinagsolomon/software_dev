@@ -1,130 +1,215 @@
-<!DOCTYPE html>
+
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lab 4: Introduction to CSS</title>
-    <style>
-        h1{
-            background-color: darkblue;
-            color: floralwhite;
-            font-family: arial black;
-            text-align: center;
-            padding: 50px;
-        }
-        h2.author{color: blueviolet; text-align: right;}
-        .author{font-family: cursive;}
-        p.fontweight{font-weight: bolder; font-size: 20px;}
-        p.fontstyle{font-style: italic; font-size: 10px;}
-        p.author{font-size: 120%;}
-        p#intro{text-align: justify;}
-        .box1, .box2, .box3, .box4{background-color: aqua;}
-        .box1{border: orange dotted 5px; margin-top: 100px; padding-left: 50px;}
-        .box2{border: olive 20px groove; margin: 50px; padding: 20px;}
-        .box3{border: red 3px solid; margin: 200px 150px; padding: 50px 100px;}
-        .box4{margin: 30px 100px 200px 50px; padding: 50px 20px 70px 100px;}
-        body{background-color: bisque;}
-    </style>
-    <link rel="stylesheet" href="style.css">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Lab4, introduction to CSS</title>
+
+    <link href="style.css" rel="stylesheet">
 </head>
 <body>
-    <h1>Introduction to CSS</h1>
-    <p id="intro">CSS (Cascading Style Sheets) allows you to create rules that specify how the content of an element should appear.</p>
-    <p>CSS (Cascading Style Sheets) allows you to create rules that specify how the content of an element should appear.</p>
-    <p class="author">By: Karina Solomon</p>
-    <h2 class="author">Typology</h2>
-    <p class="author">Styling text</p>
-    <p class="fontweight">Paragraph with font-weight bold</p>
-    <p class="fontstyle">Paragraph with font-style italic</p>
-    <h2 class="subtitle">Borders</h2>
-    <div class="box1">Box 1: CSS (Cascading Style Sheets) allows you to create rules that specify how the content of an element should appear</div>
-    <div class="box2">Box 2: CSS (Cascading Style Sheets) allows you to create rules that specify how the content of an element should appear</div>
-    <div class="box3">Box 3: CSS (Cascading Style Sheets) allows you to create rules that specify how the content of an element should appear</div>
-    <div class="box4">Box 4: CSS (Cascading Style Sheets) allows you to create rules that specify how the content of an element should appear</div>
-    <hr>
-    <h2 class="subtitle">Text Shadow</h2>
-    <h3 class="shadow1">Karina Solomon</h3>
-    <h3 class="shadow2">Karina Solomon</h3>
-    <h3 class="shadow3">Karina Solomon</h3>
-    <h3 class="shadow4">Karina Solomon</h3>
-    <h3 class="shadow5">Karina Solomon</h3>
-    <h3 class="shadow6">Karina Solomon</h3>
+<h1>Introduction to CSS</h1>
 
-    <h2 class="subtitle">Box Shadow</h2>
-    <div class="shadowbox1">Box 1</div>
-    <div class="shadowbox2">Box 2</div>
-    <div class="shadowbox3">Box 3</div>
-    <div class="shadowbox4">Box 4</div>
-    <div class="shadowbox5">Box 5</div>
+<p id="intro">CSS(Cascading Style Sheets) allows you to create rules that specify how the content of an element should
+    appear.CSS(Cascading Style Sheets) allows you to create rules that specify how the content of an element should
+    appearCSS(Cascading Style Sheets) allows you to create rules that specify how the content of an element should
+    appear</p>
 
-    <h2 class="subtitle">Rounded Borders</h2>
-    <div class="radiusBox1">Box 1</div>
-    <div class="radiusBox2">Box 2</div>
-    <div class="radiusBox3">Box 3</div>
-    <div class="radiusBox4">Box 4</div>
-    <div class="radiusBox5">Box 5</div>
+<p>CSS(Cascading Style Sheets) allows you to create rules that specify how the content of an element should
+    appear.CSS(Cascading Style Sheets) allows you to create rules that specify how the content of an element should
+    appearCSS(Cascading Style Sheets) allows you to create rules that specify how the content of an element should
+    appear</p>
 
-    <h2 class="subtitle">Basic Image Formatting</h2>
-    <img class="blossomimg blossom1" src="images/img1.jpg" alt="image of cherry blossoms">
-    <img class="blossomimg blossom2" src="images/img1.jpg" alt="image of cherry blossoms">
-    <img class="blossomimg blossom3" src="images/img1.jpg" alt="image of cherry blossoms">
-    <img class="blossomimg blossom4" src="images/img1.jpg" alt="image of cherry blossoms">
+<p class="author">By: Karina Solomon</p>
+<h2 class="author" id="typology">Typology</h2>
+<p class="author">Styling text</p>
+<p class="fontweight">Paragraph with font-weigh bold</p>
+<p class="fontstyle">Paragraph with font style</p>
+<h2 class="subtitle">Borders</h2>
+<div class="box1">box1</div>
+<div class="box2">box2</div>
+<div class="box3">box3</div>
+<div class="box4">box4</div>
+<h2 class="subtitle">Text shadow</h2>
+<h3 class="shadow1">Karina Solomon</h3>
+<h3 class="shadow2">Karina Solomon</h3>
+<h3 class="shadow3">Karina Solomon</h3>
+<h3 class="shadow4">Karina Solomon</h3>
+<h3 class="shadow5">Karina Solomon</h3>
+<h3 class="shadow6">Karina Solomon</h3>
 
-    <h2 class="subtitle">Image Filters</h2>
-    <figure>
-        <img class="blur1" src="images/img1.jpg" alt="image of cherry blossoms">
-        <figcaption>Blurred filter with 1px</figcaption>
-        <img class="blur2" src="images/img1.jpg" alt="image of cherry blossoms">
-        <figcaption>Blurred filter with 5px</figcaption>
-        <img class="blur3" src="images/img1.jpg" alt="image of cherry blossoms">
-        <figcaption>Blurred filter with 10px</figcaption>
-    </figure>
+<h2 class="subtitle"></h2>
+<div class="shadowbox1">Box1</div>
+<div class="shadowbox2">Box2</div>
+<div class="shadowbox3">Box3</div>
+<div class="shadowbox4">Box4</div>
+<div class="shadowbox5">Box5</div>
 
-    <figure>
-        <img style="filter: sepia(0%);" src="images/img1.jpg" alt="image of cherry blossoms">
-        <figcaption>Sepia filter with 0%</figcaption>
-        <img style="filter: sepia(50%);" src="images/img1.jpg" alt="image of cherry blossoms">
-        <figcaption>Sepia filter with 50%</figcaption>
-        <img style="filter: sepia(100%);" src="images/img1.jpg" alt="image of cherry blossoms">
-        <figcaption>Sepia filter with 100%</figcaption>
-    </figure>
+<h2 class="subtitle">Round Borders</h2>
+<div class="radiusbox1">Box 1</div>
+<div class="radiusbox2">Box 2</div>
+<div class="radiusbox3">Box 3</div>
+<div class="radiusbox4">Box 4</div>
+<div class="radiusbox5">Box 5</div>
 
-    <figure>
-        <img style="filter: invert(0%);" src="images/img1.jpg" alt="image of cherry blossoms">
-        <figcaption>Invert filter with 0%</figcaption>
-        <img style="filter: invert(40%);" src="images/img1.jpg" alt="image of cherry blossoms">
-        <figcaption>Invert filter with 40%</figcaption>
-        <img style="filter: invert(100%);" src="images/img1.jpg" alt="image of cherry blossoms">
-        <figcaption>Invert filter with 100%</figcaption>
-    </figure>
+<h2 id="images">Basic image formatting</h2>
+<figure class="formatting">
+    <img alt="image of cherry blossoms" class="dumbo coffeeshop1" src="images/img1.jpg">
+    <img alt="image of cherry blossoms" class="dumbo coffeeshop2" src="images/img1.jpg">
+    <img alt="image of cherry blossoms" class="dumbo coffeeshop3" src="images/img1.jpg">
+    <img alt="image of cherry blossoms" class="dumbo coffeeshop4" src="images/img1.jpg">
+</figure>
 
-    <h2 class="subtitle">Static and Liquid Layouts</h2>
-    <main class="maincontainer">
-        <div class="leftcolumn">
-            <section class="section">Information section</section>
-            <article class="article">Article section</article>
+<h2 class="subtitle">Image filters</h2>
+
+<figure class="filter">
+    <img alt="image of cherry blossoms" class="blur1" src="images/img1.jpg">
+    <figcaption>Blurred filter with 1px</figcaption>
+
+    <img alt="image of cherry blossoms" class="blur2" src="images/img1.jpg">
+    <figcaption>Blurred filter with 5px</figcaption>
+
+    <img alt="image of cherry blossoms" class="blur3" src="images/img1.jpg">
+    <figcaption>Blurred filter with 10px</figcaption>
+
+</figure>
+
+<figure class="filter">
+    <img alt="image of cherry blossoms" class="blur4" src="images/img1.jpg" style="filter: sepia(0%)">
+    <figcaption>Sepia filter with 0%</figcaption>
+    <img alt="image of cherry blossoms" class="blur4" src="images/img1.jpg" style="filter: sepia(50%)">
+    <figcaption>Sepia filter with 50%</figcaption>
+    <img alt="image of cherry blossoms" class="blur4" src="images/img1.jpg" style="filter: sepia(100%)">
+    <figcaption>Sepia filter with 100%</figcaption>
+</figure>
+
+<figure class="filter">
+    <img alt="image of cherry blossoms" class="blur4" src="images/img1.jpg" style="filter: invert(0%)">
+    <figcaption>Invert filter with 0%</figcaption>
+    <img alt="image of cherry blossoms" class="blur4" src="images/img1.jpg" style="filter: invert(40%)">
+    <figcaption>Invert filter with 40%</figcaption>
+    <img alt="image of cherry blossoms" class="blur4" src="images/img1.jpg" style="filter: invert(100%)">
+    <figcaption>Invert filter with 100%</figcaption>
+</figure>
+
+<h2 class="subtitle">Static and liquid layouts</h2>
+
+<main class="maincontainer">
+    <div class="leftcolumn">
+        <section class="section">Information section</section>
+        <article class="article">Article section</article>
+    </div>
+    <aside class="rightcolumn">Aside for blogs</aside>
+    <section class="images">images container</section>
+</main>
+
+
+<h2 id="cards">Cards</h2>
+<section class="cardcontainer">
+    <div class="card">
+        <img alt="image of cherry blossoms" class="imgcard" src="images/img1.jpg">
+        <a class="linkcard" href="https://www.bbg.org/collections/cherries" rel="noreferrer noopenner"
+           target="_blank">Visit Brooklyn Botanical Garden</a>
+    </div>
+
+    <div class="card">
+        <img alt="image of cherry blossoms" class="imgcard" src="images/img1.jpg">
+        <a class="linkcard" href="https://www.bbg.org/collections/cherries" rel="noreferrer noopenner"
+           target="_blank">Visit Brooklyn Botanical Garden</a>
+    </div>
+
+    <div class="card2">
+        <img alt="image of cherry blossoms" class="imgcard" src="images/img1.jpg">
+        <h2 class="cardtitle">Brooklyn Botanical Garden</h2>
+        <p class="cardinfo">The BK Botanical Garden covers over 5000 acres of land in Northern Brooklyn.</p>
+        <a class="linkcard2" href="https://www.bbg.org/collections/cherries">Brooklyn Botanical Garden</a>
+    </div>
+    <div class="card2">
+        <img alt="image of cherry blossoms" class="imgcard" src="images/img1.jpg">
+        <h2 class="cardtitle">Brooklyn Botanical Garden</h2>
+        <p class="cardinfo">BK Botanical Garden is open all throughout the spring, summer, and fall seasons.</p>
+        <a class="linkcard2" href="https://www.bbg.org/collections/cherries">Brooklyn Botanical Garden</a>
+    </div>
+    <div class="card2">
+        <img alt="image of cherry blossoms" class="imgcard" src="images/img1.jpg">
+        <h2 class="cardtitle">Brooklyn Botanical Garden</h2>
+        <p class="cardinfo">The BK Botanical Garden is revered by both locals and foreign visitors alike.</p>
+        <a class="linkcard2" href="https://www.bbg.org/collections/cherries">Brooklyn Botanical Garden</a>
+    </div>
+</section>
+
+<section>
+
+    <h2 class="subtitle">Navigation</h2>
+    <ul class="navbar">
+        <li><a href="#">Home</a></li>
+        <li><a href="#typology">Typology</a></li>
+        <li><a href="#images">Images</a></li>
+        <li><a href="#cards">Cards</a></li>
+    </ul>
+
+    <nav class="navbarhorizontal">
+        <a href="#">Home</a>
+        <a href="#typology">Typology</a>
+        <a href="#images">Images</a>
+        <a href="#cards">Cards</a>
+    </nav>
+
+    <h2 class="subtitle">Colors</h2>
+    <h3>RGB value</h3>
+    <section class="rgbcontainer">
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+
+    <h3>Hex code</h3>
+    <section class="hexcontainer">
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+
+    <h2 class="subtitle">Position</h2>
+        <div class="imgcontainer">
+            <img alt="image of cherry blossoms" src="images/img1.jpg" width="100%">
+            <p class="imgtitle">Brooklyn Botanical Garden</p>
+
         </div>
-        <aside class="rightcolumn">Aside for blogs</aside>
-        <figure class="images">images container</figure>
-        <figcaption></figcaption>
-    </main>
 
-    <h2>Cards</h2>
-    <section class="cardcontainer">
-        <div class="card">
-            <img class="imgcard" src="images/img1.jpg" alt="image of cherry blossoms">
-            <a class="linkcard" href="https://www.bbg.org/collections/cherries" target="_blank" rel="noopener noreferrer">Visit Blossom Garden</a>
-        </div>
-        <div class="card">
-            <img class="imgcard" src="images/img1.jpg" alt="image of cherry blossoms">
-            <a class="linkcard" href="https://www.bbg.org/collections/cherries" target="_blank" rel="noopener noreferrer">Visit Blossom Garden</a>
-        </div>
-        <div class="card2">
-            <img class="imgcard" src="images/img1.jpg" alt="image of cherry blossoms">
-            <h2 class="cardtitle">Brooklyn Botanical Garden</h2>
-            <p class="cardinfo">Brooklyn Botanical Garden occupies 52 acres in central Brooklyn.</p>
-            <a class="linkcard2" href="https://www.bbg.org/collections/cherries" target="_blank" rel="noopener noreferrer">Visit Blossom Garden</a>
+    <h2 class="subtitle">Background image</h2>
+
+    <section class="imgbackground">
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+
+
+    <p>Linear gradient with 2+hree color</p>
+    <section class="imgbackground2">
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+
+    <h2>Hero image with linear-gradient</h2>
+    <section class="heroimgcontainer">
+        <div class="herocontent">
+            <h3 class="herocontent_title">Brooklyn Botanical Garden</h3>
+            <p class="hereocontent_intro">Come visit this one-of-a-kind place in the heart of Brooklyn.</p>
+            <a class="herocontent_link" href="https://www.bbg.org/collections/cherries" target="_blank" rel="noreferrer nonopenner">More info</a>
         </div>
     </section>
+
+    <nav class="navbarhorizontal fixedtabs">
+        <a href="#">Home</a>
+        <a href="#typology">Typology</a>
+        <a href="#images">Images</a>
+        <a href="#cards">Cards</a>
+    </nav>
+
+</section>
 </body>
 </html>
