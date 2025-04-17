@@ -1,0 +1,189 @@
+:root, body{
+    --primarycolor: rgb(0, 0, 0);
+    --primarylightcolor: rgb(211, 211, 211);
+    --secondarycolor: rgb(180, 0, 0);
+    background-color: var(--primarycolor);
+    color: var(--primarylightcolor);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.navbar {
+list-style-type: none;
+margin: 10px;
+padding: 10px;
+overflow: hidden;
+background-color: var(--primarycolor);
+position: fixed;
+top: 10px;
+width: 100%;
+}
+.navbar li {
+float: left;
+}
+.navbar li a {
+display: block;
+color: var(--primarylightcolor);
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+.navbar li a:hover:not(.active) {
+background-color: var(--primarycolor);
+}
+.navbar .active {
+background-color: var(--secondarycolor);
+}
+.heroimg{
+background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/heroimg.jpg");
+/* Set a specific height */
+height: 600px;
+/* Position and center the image to scale nicely on all screens */
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+}
+.titlebg{
+    /*background: none !important;*/
+    /*color: var(--secondarycolor);*/
+    -webkit-text-stroke: .25px var(--primarylightcolor);
+    background-image: linear-gradient(to top,var(--primarycolor),var(--secondarycolor));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /*border: dotted 5px var(--primarylightcolor);*/
+    text-align: left;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 100px;
+    padding: 50px;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+}
+.elitetraining{
+    color: var(--primarylightcolor) !important;
+    background-color: var(--primarycolor) !important;
+    text-align: left;
+    padding: 5%;
+}
+.choosemayo h1{
+    text-align: center;
+    font-weight: bolder;
+}
+.mayomma{
+    color: var(--secondarycolor);
+    background-color: var(--primarycolor);
+    font-weight: lighter !important;
+    border: solid 1px var(--primarycolor);
+    padding: 1%;
+}
+.choosemayo{
+    color: var(--primarycolor) !important;
+    background-color: var(--primarylightcolor) !important;
+    text-align: left;
+    padding: 5%;
+    font-size: larger;
+}
+/* Cards */
+.amazingclasses h1{
+    text-align: center;
+}
+.amazingclasses{
+    color: var(--primarylightcolor) !important;
+    background-color: var(--primarycolor) !important;
+    text-align: left;
+    padding: 5%;
+}
+.cards, .cards2{
+    float: left;
+    margin: 1%;
+    padding: 2%;
+    background-color: var(--primarylightcolor) !important;
+    color: var(--primarycolor) !important;
+    height: 100%;
+}
+.cards{
+    width: 33%;
+}
+.cards2{
+    width: 50%;
+}
+.cards button, .cards2 button{
+    background-color: var(--secondarycolor);
+    padding: 2%;
+    margin: auto;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  background: #f1f1f1f1;
+  display: flexbox;
+  flex-wrap: wrap;
+  display: overflow;
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+  text-align: center;
+  padding: 20px;
+  background: #ddd;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Add an italic font style to all quotes */
+q {font-style: italic;}
+
+/* Add a blue color to the author */
+.author {color: cornflowerblue;}
