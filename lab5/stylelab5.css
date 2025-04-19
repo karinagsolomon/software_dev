@@ -50,10 +50,31 @@ html{scroll-behavior: smooth;}
     margin: 30px;
 }
 .card:hover{
-    transform: scale(1.2);
-    box-shadow: 10px 10px 10px greenyellow;
+    transform: scale(-.75);
+    box-shadow: 5px 5px 5px greenyellow;
 }
 .cardslide:hover{
-    transform: translateY(10px) scale(1);
+    transform: translateY(-10px) scale(1.1);
     box-shadow: 3px 3px 3px pink;
+}
+/* flex container */
+.flexcontainer{
+    background-color: lightcoral;
+    display: flex; /* to display cards in one row */
+    flex-wrap: wrap; /* to keep card size the same in different screen sizes */
+    justify-content: space-evenly; /* tells how to distribute the cards in a row */
+    align-items: flex-end; /* goes together w/ align-content to work */
+    align-content: space-between;
+}
+.gridcontainer{
+    display: grid;
+    grid-template-columns: auto auto auto auto; /* use auto for auto division and fr to choose a fraction of the row or px to display card */
+    gap: 10px;
+    background-color: bisque;
+    padding: 1%;
+}
+.item{
+    background-color: aqua;
+    text-align: center;
+    padding: 20px;
 }
