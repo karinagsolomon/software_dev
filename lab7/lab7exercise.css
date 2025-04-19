@@ -1,0 +1,16 @@
+.accordion {
+    --bs-accordion-border-color: rgb(212, 201, 190);
+    /* --bs-accordion-border-radius: 25%; */
+    /* --bs-accordion-inner-border-radius: 10px; */
+    --bs-accordion-btn-color: rgb(18, 52, 88);
+    --bs-accordion-active-bg: rgb(35, 154, 238);
+    --bs-accordion-active-color: rgb(241, 239, 236);
+    --bs-accordion-btn-focus-box-shadow: none;
+    --bs-accordion-bg: rgb(241, 239, 236);
+    --bs-accordion-color: rgb(18, 52, 88);
+    --bs-accordion-btn-focus-border-color: unset;
+  }
+  
+  .accordion-button:not(.collapsed) {
+    box-shadow: none;
+  }
