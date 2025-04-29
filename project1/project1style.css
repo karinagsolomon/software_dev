@@ -1,0 +1,247 @@
+:root, body{
+    --primarycolor: rgb(0, 0, 0);
+    --primarylightcolor: rgb(211, 211, 211);
+    --secondarycolor: rgb(180, 0, 0);
+    background-color: var(--primarycolor);
+    color: var(--primarylightcolor);
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Hero image */
+.heroimg img{
+    /*background-image: url("images/heroimg.jpg");*/
+    height: 600px;
+    width: 1275px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: static;
+    /* frosted glass effect */
+}
+.titlebg{
+    background: none !important;
+    -webkit-text-stroke: 1px var(--primarycolor);
+    text-shadow: 3px 3px black;
+    text-align: left;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 75px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.mmakb{
+  background-color: var(--primarycolor);
+  color: var(--secondarycolor);
+  padding: 1%;
+  border: 1px solid var(--primarycolor);
+  border-radius: 10px;
+}
+/* About section */
+.elitetraining{
+  color: var(--primarylightcolor) !important;
+  background-color: var(--primarycolor) !important;
+  text-align: left;
+  padding: 5%;
+  margin: 0% 5%;
+}
+.elitetraining span{
+  color: var(--secondarycolor);
+  background-color: var(--primarylightcolor);
+  font-weight: bolder !important;
+  padding: 1%;
+  border: 1px solid var(--primarycolor);
+  border-radius: 10px;
+}
+.elitetraining h1, .choosemayo h1{
+  margin-top: 5%;
+  text-align: center;
+  font-weight: light;
+}
+.mayomma{
+  color: var(--secondarycolor);
+  background-color: var(--primarycolor);
+  font-weight: bolder !important;
+  padding: 1%;
+  border: 1px solid var(--primarycolor);
+  border-radius: 10px;
+}
+.choosemayo{
+  color: var(--primarycolor) !important;
+  background-color: var(--primarylightcolor) !important;
+  text-align: left;
+  padding: 5% 10%;
+  margin: 5% 0%;
+  font-size: larger;
+}
+/* Cards or Classes section*/
+.amazingclasses{
+  color: var(--primarylightcolor) !important;
+  background-color: var(--primarycolor) !important;
+  text-align: left;
+  padding: 5%;
+  margin: 5%;
+  width: 90%;
+}
+.amazingclasses h1{
+  margin-top: 5%;
+  text-align: center;
+  font-weight: lighter;
+}
+.amazingclasses span{
+  color: var(--secondarycolor);
+  background-color: var(--primarylightcolor);
+  font-weight: 900 !important;
+  padding: 1%;
+  border: 1px solid var(--primarylightcolor);
+  border-radius: 10px;
+}
+/* Cards Bootstrap */
+.classcards{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1%;
+}
+.card{
+  width: 32%;
+  background-color: var(--primarylightcolor);
+  border: 3px dashed var(--secondarycolor);
+  color: var(--primarycolor);
+  margin-bottom: 5%;
+}
+.card:hover{
+  transform: translateY(-20px);
+  transition-duration: 1000ms;
+  box-shadow: 5px 5px 5px rgb(255, 255, 255, .5);
+}
+.card h4{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.card img{
+  height: fit-content;
+}
+.card-text{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.card-body button, .btn{
+  background-color: var(--secondarycolor) !important;
+  color: whitesmoke !important;
+  border: none;
+  border-radius: 10px;
+}
+.card-body button:hover, /* payment button */.btn:hover{
+  background-color: var(--primarycolor) !important;
+  color: whitesmoke !important;
+}
+/* submit payment */
+.btn:hover{
+  border: 1px solid whitesmoke;
+}
+/* carousel testimonials */
+#testimonials{
+  padding: 5%;
+  background-color: var(--primarylightcolor) !important;
+  color: var(--primarycolor) !important;
+}
+.carousel{
+  margin: 5% auto;
+  width: 80%;
+  /*background-color: var(--primarylightcolor) !important;
+  color: var(--primarycolor) !important;*/
+}
+.carousel h1{
+  text-align: center;
+  font-weight: light;
+}
+.carousel span{
+  color: var(--secondarycolor);
+  background-color: var(--primarycolor);
+  font-weight: bolder !important;
+  padding: 1%;
+  border: 1px solid var(--primarycolor);
+  border-radius: 10px;
+}
+.carousel-item{
+  padding: 5%;
+}
+.carousel-control-prev{
+  margin-left: -10%;
+}
+.carousel-control-next {
+  margin-right: -10%;
+}
+
+/* footer */
+footer{
+  padding: 5%;
+  margin: 5%;
+}
+#contact{
+    display: grid;
+    grid-template-columns: 1fr 2fr 3fr;
+    gap: 2%;
+    background-color: var(--primarycolor);
+    color: var(--primarylightcolor);
+}
+.bottomnav ul{
+  list-style-type: none;
+}
+.bottomnav li{
+  padding-bottom: 5%;
+}
+.bottomnav a, .contactinfo a{
+  color: var(--primarylightcolor);
+  text-decoration: none;
+  font-weight: bold;
+}
+.bottomnav a:hover, .contactinfo a:hover{
+  color: var(--secondarycolor);
+  background-color: var(--primarylightcolor);
+  font-size: larger;
+  transition: 1000ms;
+}
+.contactinfo, .socials{
+    width: 50%;
+    float:left
+}
+.socials img{
+    height: 50px;
+}
+.socials a:hover{
+  filter: invert(25%);
+}
+.trademark{
+    color: var(--primarylightcolor);
+    background-color: var(--secondarycolor);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0% 5%;
+    /*margin: 0% 5%;*/
+    margin-bottom: 0px;
+}
+.navbar {
+  list-style-type: none;
+  padding: 10px;
+  overflow: hidden;
+  background-color: rgba(0,0,0,.75)!important;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  .navbar li {
+  float: left;
+  }
+  .navbar li a, .navbar-brand{
+  display: block;
+  color: var(--primarylightcolor) !important;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  border-radius: 10px;
+  }
+  .navbar li a:hover, .navbar-brand:hover{
+  background-color: var(--secondarycolor) !important;
+  color: var(--primarylightcolor) !important;
+  }
