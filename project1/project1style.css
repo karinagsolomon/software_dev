@@ -20,7 +20,7 @@
 .titlebg{
     background: none !important;
     -webkit-text-stroke: 1px var(--primarycolor);
-    text-shadow: 3px 3px black;
+    text-shadow: 3px 3px #000000;
     text-align: left;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 75px;
