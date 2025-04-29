@@ -8,14 +8,11 @@
 }
 /* Hero image */
 .heroimg img{
-    /*background-image: url("images/heroimg.jpg");*/
-    height: 600px;
-    width: 1275px;
+    width: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: static;
-    /* frosted glass effect */
 }
 .titlebg{
     background: none !important;
