@@ -111,21 +111,20 @@ class Car:
             return f"{self.carmake} with model {self.carmodel} was manufactured on {self.caryear}"
         
         # method to read the odometer
-        def read_odometer(self){
+        def read_odometer(self):
             return f"This car has {self.odometer_reading} miles on it"
-        }
+        
 
         # method to update the odometer
-        def update_odometer(self, mileage){
+        def update_odometer(self, mileage):
             if mileage > self.odometer_reading:
                 self.odometer_reading = mileage
             else:
                 print("Odometer cannot roll back")
-        }
+        
         # method to add mi to the odometer
-        def increment_odometer(self, miles){
+        def increment_odometer(self, miles):
             if miles > 0:
                 self.odometer_reading += miles
             else:
                 print("Can't add negative miles")
-        }
