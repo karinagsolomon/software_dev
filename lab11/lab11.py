@@ -140,3 +140,11 @@ car1.update_odometer = 5
 print(car1.read_odometer())
 
 # add 20 mi to the odometer
+car1.increment_odometer(20)
+print(car1.read_odometer())
+
+car1.increment_odometer(-5)
+print(car1.read_odometer())
+
+car1.increment_odometer(8)
+print(car1.read_odometer())
