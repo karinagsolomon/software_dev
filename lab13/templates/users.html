@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{%block title%}Karina's Users{%endblock%}</title> <!--replaces %block title% with content defined in child template-->
+</head>
+<body>
+    {%extends 'base.html'%} <!--uses the layout in base page-->
+    {%block msg%}User Cyberpage{%endblock%} <!--replaces %block msg% with content defined in child template-->
+    {%block content%} <!--replaces %block content% with content defined in child template-->
+    {% with messages = get_flashed_messages()%}
+        {%if messages%}
+            <ul class="infomessage">
+            {%for m in messages%}
+            <li>{{m}}</li>
+            {%endfor%}
+            </ul>
+        {%endif%}
+    {%endwith%}
+    <h2>Users in the list</h2>
+    <form method="POST">
+        <label for="name">Enter name: </label>
+        <input type="text" name="employee_name" id="name"/>
+        <label for="userid">Enter user ID</label>
+        <input type="text" name="employee_id" id="userid"/>
+        <button type="submit">SUBMIT FORM</button>
+    </form>
+    <p>The first employee is {{session['employee1']}}</p>
+    {%endblock%}
+</body>
+</html>

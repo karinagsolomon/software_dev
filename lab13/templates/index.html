@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karina's Flask App</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+    <h1>Welcome to Flask! {{username}}</h1>
+    <figure class="introimgcontainer">
+        <img src="{{ url_for('static', filename='nyc.jpg') }}" alt="image of nyc cab" class="introimg">
+    </figure>
+    <section class="maincontainer">
+        <ul>
+        {% for eachfruit in listfruits %}
+            <li>{{eachfruit}}</li>
+        {% endfor %}
+        </ul>
+        {% if checkfruit in listfruits %}
+            <p>{{checkfruit}} is in stock!</p>
+        {% else %}
+            <p>Sorry, {{checkfruit}} is out of stock.</p>
+        {% endif %}
+    </section>
+    <form method="POST">
+        <input type="password" name="password"/>
+        <input type="submit"/>
+    </form>
+    <!--Redirects to users page-->
+    <a href={{url_for('users')}}> Add new employee</a>
+</body>
+</html

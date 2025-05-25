@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{%block title%} Karina's About Us {%endblock%}</title> <!--replaces %block title% with content defined in child template-->
+</head>
+<body>
+    {%extends 'base.html'%} <!--uses the layout in base page-->
+    {%block msg%}About Us{%endblock%} <!--replaces %block msg% with content defined in child template-->
+    {%block content%} <!--replaces %block content% with content defined in child template-->
+        <p>Lorem ipsum dolor...</p>
+    {%endblock%}
+</body>
+</html>
+
