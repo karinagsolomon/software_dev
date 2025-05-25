@@ -1,0 +1,25 @@
+img{
+    width: 100%;
+    display: block;
+}
+.introimgcontainer{
+    width: 700px;
+    margin: 2em auto;
+}
+.maincontainer{
+    padding: 2rem;
+    border: solid 2px #808080;
+}
+.title{
+    text-align: center; color:orangered;
+}
+.maincontainer{
+    padding: 2rem;
+    border: solid #808080 2px;
+    background-color: aliceblue;
+    width: 700px;
+    margin: 2em auto;
+}
+.infomessage{ 
+    color: crimson; font-size: 1.2rem;
+}
